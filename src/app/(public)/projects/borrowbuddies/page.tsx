@@ -9,7 +9,7 @@ import {
   EffectCoverflow,
   EffectFade,
 } from "swiper/modules";
-
+import Image from 'next/image';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
@@ -23,7 +23,6 @@ const BorrowBuddies: React.FC = () => {
     <div className="mt-20 relative">
       <div className="container mx-auto px-4 py-8">
         <div className="absolute top-10 right-28 flex space-x-4">
-          {/* GitHub Repo Link */}
           <a
             href="https://github.com/yash-bhojwani/BorrowBuddies"
             target="_blank"
@@ -32,7 +31,6 @@ const BorrowBuddies: React.FC = () => {
           >
             <FontAwesomeIcon icon={faGithub} size="2xl" />
           </a>
-          {/* Website Link */}
           <a
             href="https://borrowbuddies.vercel.app/"
             target="_blank"
@@ -69,23 +67,29 @@ const BorrowBuddies: React.FC = () => {
               className="swiper-container z-0"
             >
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/borrowbuddies-preview.png"
                   alt="Gallery Image 1"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/yoko-preview.png"
                   alt="Gallery Image 2"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/borrowbuddies-preview.png"
                   alt="Gallery Image 3"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>

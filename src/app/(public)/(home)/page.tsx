@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { SECTION } from "@/shared/consts/styles/layout";
+import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Home: React.FC = () => {
           {/* Text Section */}
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-4xl font-bold mb-4 text-[#2D080A]">
-              Hello, I'm Yan Er.
+              Hello, I&apos;m Yan Er.
             </h1>
             <p className="text-lg mb-16">
               I am a UI/UX designer and developer. I love creating beautiful and
@@ -51,9 +52,11 @@ const Home: React.FC = () => {
           </div>
           {/* Image Section */}
           <div className="lg:w-1/2 flex justify-center">
-            <img
+            <Image
               src="/images/home-image.png"
               alt="Girl on Computer"
+              width={800}
+              height={800}
               className="w-100 h-auto rounded-full object-cover"
             />
           </div>

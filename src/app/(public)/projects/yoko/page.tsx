@@ -9,7 +9,7 @@ import {
   EffectCoverflow,
   EffectFade,
 } from "swiper/modules";
-
+import Image from 'next/image';
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
@@ -56,23 +56,29 @@ const Yoko: React.FC = () => {
               className="swiper-container z-0"
             >
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/borrowbuddies-preview.png"
                   alt="Gallery Image 1"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/yoko-preview.png"
                   alt="Gallery Image 2"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <img
+                <Image
                   src="/images/borrowbuddies-preview.png"
                   alt="Gallery Image 3"
+                  width={1000} // set appropriate width
+                  height={1000} // set appropriate height
                   className="object-cover w-full h-full rounded-lg"
                 />
               </SwiperSlide>
