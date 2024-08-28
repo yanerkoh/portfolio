@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto md:pt-40 pt-24 px-4 py-8 h-screen">
+    <div className="container mx-auto md:pt-40 pt-24 px-4 py-8 h-screen flex items-center">
       <div className={`${SECTION.WIDTH}`}>
         {/* Introduction Section */}
         <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-8">
