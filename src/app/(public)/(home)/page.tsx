@@ -57,7 +57,7 @@ const Home: React.FC = () => {
               alt="Girl on Computer"
               width={800}
               height={800}
-              className="w-100 h-auto rounded-full object-cover pb-10"
+              className="w-100 h-auto rounded-full object-cover"
             />
           </div>
         </div>
