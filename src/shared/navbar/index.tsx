@@ -48,7 +48,7 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-3xl hover:scale-105 hover:text-black duration-200"
             >
-              <Link onClick={() => setNav(!nav)} href={ref}>
+              <Link onClick={() => setNav(!nav)} href={`/${ref}`}>
                 {link}
               </Link>
             </li>
