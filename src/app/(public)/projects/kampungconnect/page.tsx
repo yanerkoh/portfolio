@@ -17,11 +17,20 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const KampungConnect: React.FC = () => {
   return (
     <div className="mt-16 relative">
       <div className="container mx-auto px-4 py-8">
+        <Link
+          href="/projects"
+          className="absolute top-2 left-4 md:top-4 md:left-8 flex items-center text-blue-600 hover:text-blue-800"
+        >
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+          Back
+        </Link>
         <div className="absolute top-4 right-8 md:top-10 md:right-28 flex space-x-4">
           <a
             href="https://kampungconnect-staging.vercel.app/"
@@ -45,7 +54,7 @@ const KampungConnect: React.FC = () => {
           <p className="text-md md:text-lg">UI/UX Designer</p>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
-          {/* Swiper Gallery Section */}
+
           <div className="lg:w-7/12 w-full lg:mr-10 mb-4 lg-mb-0">
             <Swiper
               spaceBetween={20}
@@ -103,10 +112,9 @@ const KampungConnect: React.FC = () => {
             </Swiper>
           </div>
 
-          {/* Details Section */}
           <div className="lg:w-2/3 space-y-8">
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold">Problem</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Problem</h2>
               <p className="text-lg">
                 Ground-Up Initiative (GUI) is a non-profit that empowers
                 individuals to contribute to global stewardship. Currently, GUI
@@ -118,7 +126,7 @@ const KampungConnect: React.FC = () => {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-2xl font-semibold">Solution</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Solution</h2>
               <div className="text-lg">
                 A Volunteer Management System to serve as a centralized hub for
                 all volunteer-related information, enabling GUI to efficiently
@@ -133,42 +141,48 @@ const KampungConnect: React.FC = () => {
 
         <div className="flex"></div>
         <div className="mt-4">
-          <h2 className="text-2xl font-semibold">My Impact</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold">My Impact</h2>
           <p className="text-lg">
             As the UI/UX designer, I collaborated with a team of designers to
             ensure consistency by adhering to a shared design library and
-            exchanging feedback. I was responsible for designing the homepage,
-            navigation bar, login/logout features, and the reports module on the
-            admin portal. Additionally, I worked closely with product managers
-            and the organization to discuss product requirements, and I
-            communicated with developers to address any issues identified during
-            user acceptance testing (UAT).
+            exchanging feedback. I was responsible for designing the{" "}
+            <strong>
+              homepage, navigation bar, login/logout features, and the reports
+              module on the admin portal
+            </strong>
+            . Additionally, I worked closely with product managers and the
+            organization to discuss product requirements, and I communicated
+            with developers to address any issues identified during user
+            acceptance testing (UAT).
           </p>
         </div>
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-2">Process</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-2">Process</h2>
 
-          {/* Initial User Flow Development */}
           <div className="mt-6">
             <h3 className="text-xl font-semibold mb-2">
               Initial User Flow Development
             </h3>
             <p className="text-lg">
               The project began with a comprehensive analysis of the Ground-Up
-              Initiative’s (GUI) existing manual processes for managing
-              volunteer and beneficiary information. GUI relied on spreadsheets
-              stored on Google Drive for data management, which involved
-              cumbersome manual tasks such as transferring data between
-              spreadsheets and manually emailing project coordinators about new
-              volunteer registrations.
+              Initiative’s (GUI){" "}
+              <strong>
+                existing manual processes for managing volunteer and beneficiary
+                information
+              </strong>
+              . GUI relied on spreadsheets stored on Google Drive for data
+              management, which involved cumbersome manual tasks such as
+              transferring data between spreadsheets and manually emailing
+              project coordinators about new volunteer registrations.
             </p>
             <p className="text-lg mt-4">
               To address these inefficiencies, I developed an initial user flow
               based on the organization’s current manual processes. This flow
               mapped out the existing steps, including data entry, data
-              migration, and communication processes. The goal was to identify
-              pain points and areas for improvement, setting the stage for the
-              creation of a more streamlined and automated system.
+              migration, and communication processes. The goal was to{" "}
+              <strong>identify pain points and areas for improvement</strong>,
+              setting the stage for the creation of a more streamlined and
+              automated system.
             </p>
             <div className="mt-4 flex justify-center">
               <Image
@@ -182,14 +196,18 @@ const KampungConnect: React.FC = () => {
             <p className="text-lg mt-4">
               Based on this analysis, we proposed a new user flow aimed at
               developing a centralized Volunteer Management System. I was
-              responsible for the user flow on the admin portal. This system was
-              designed to automate data handling and provide a single repository
-              for all volunteer-related information. The new flow included
-              automated data transfer, centralized data management, and
-              controlled access based on user roles, ensuring that GUI could
-              efficiently track volunteer demographics, numbers, and other key
-              metrics while providing project-specific access to project leaders
-              and volunteer coordinators.
+              responsible for the user flow on the <strong>admin portal</strong>
+              . This system was designed to automate data handling and provide a
+              single repository for all volunteer-related information. The new
+              flow included automated data transfer, centralized data
+              management, and controlled access based on user roles, ensuring
+              that GUI could{" "}
+              <u>
+                efficiently track volunteer demographics, numbers, and other key
+                metrics while providing project-specific access to project
+                leaders and volunteer coordinators
+              </u>
+              .
             </p>
             <div className="mt-4 flex justify-center">
               <Image
@@ -248,7 +266,6 @@ const KampungConnect: React.FC = () => {
             </p>
           </div>
 
-          {/* Low-Fidelity Wireframes */}
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-2">
               Low-Fidelity Wireframes
@@ -257,16 +274,21 @@ const KampungConnect: React.FC = () => {
               After finalizing the proposed user flow, I created low-fidelity
               wireframes that focused on several core components of the
               Volunteer Management System. The initial draft included the design
-              for the login interface, the layout for the homepage and
-              navigation bar, the structure of the reports module, and the flow
-              for each component to ensure smooth user interactions.
+              for the{" "}
+              <strong>
+                login interface, the layout for the homepage and navigation bar,
+                the structure of the reports module
+              </strong>
+              , and the flow for each component to ensure smooth user
+              interactions.
             </p>
             <p className="text-lg mt-4">
               I developed multiple design concepts to facilitate discussions
               with stakeholders and designers, aiming to identify the most
               appropriate and effective solution. The first draft of the
               wireframes provided a fundamental blueprint for the system’s
-              design. It helped visualize core interactions and user flows,
+              design. It helped{" "}
+              <strong>visualize core interactions and user flows</strong>,
               enabling early feedback and refinement.
             </p>
             <div className="mt-4 flex justify-center">
@@ -296,7 +318,6 @@ const KampungConnect: React.FC = () => {
             </div>
           </div>
 
-          {/* High-Fidelity Prototypes */}
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-2">
               High-Fidelity Prototypes
@@ -309,18 +330,25 @@ const KampungConnect: React.FC = () => {
               visual and functional elements.
             </p>
             <p className="text-lg mt-4">
-              The prototypes underwent several iterations based on feedback from
-              product managers and developers. This iterative process was
-              crucial for refining the design, accommodating evolving
-              requirements, and ensuring that the system met all functional and
-              usability standards.
+              The prototypes underwent{" "}
+              <strong>
+                several iterations based on feedback from product managers and
+                developers
+              </strong>
+              . This iterative process was crucial for refining the design,
+              accommodating evolving requirements, and ensuring that the system
+              met all functional and usability standards.
             </p>
             <p className="text-lg mt-4">
               The high-fidelity prototypes included comprehensive annotations in
-              Figma, detailing component behaviors, responsive design
-              considerations, and interaction guidelines. These annotations
-              provided valuable guidance for the development team, ensuring
-              accurate implementation of the design specifications.
+              Figma, detailing{" "}
+              <strong>
+                component behaviors, responsive design considerations, and
+                interaction guidelines
+              </strong>
+              . These annotations provided valuable guidance for the development
+              team, ensuring accurate implementation of the design
+              specifications.
             </p>
             <div className="mt-4 flex justify-center">
               <Image

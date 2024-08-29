@@ -17,13 +17,20 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-
+import Link from "next/link";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Yoko: React.FC = () => {
   return (
     <div className="mt-20 relative">
       <div className="container mx-auto px-4 py-8">
+        <Link
+          href="/projects"
+          className="absolute top-2 left-4 md:top-4 md:left-8 flex items-center text-blue-600 hover:text-blue-800"
+        >
+          <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+          Back
+        </Link>
         <div className="absolute top-0 right-8 md:top-8 md:right-28 flex space-x-4">
           <a
             href="https://github.com/yanerkoh/orbital-yoko"
@@ -50,7 +57,6 @@ const Yoko: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row items-center">
-          {/* Swiper Gallery Section */}
           <div className="lg:w-7/12 w-full lg:mr-10 mb-4 lg-mb-0">
             <Swiper
               spaceBetween={20}
@@ -129,7 +135,7 @@ const Yoko: React.FC = () => {
           {/* Details Section */}
           <div className="lg:w-2/3 space-y-8">
             <div className="mb-8">
-              <h2 className="text-2xl font-semibold">Problem</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Problem</h2>
               <p className="text-lg">
                 University students frequently face time management issues,
                 resulting in last-minute cheat sheet creation before exams. They
@@ -140,71 +146,75 @@ const Yoko: React.FC = () => {
               </p>
             </div>
             <div className="mt-8">
-              <h2 className="text-2xl font-semibold">Solution</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold">Solution</h2>
               <div className="text-lg">
-                Yoko is designed to simplify and streamline the creation of
-                cheat sheets and summaries for students, improving their study
-                efficiency. The platform will not only enhance individual study
-                methods but also foster community learning by enabling students
-                to share their summaries and cheat sheets with others.
-                Additionally, Yoko will serve as an organized repository for
-                students to manage and access their cheat sheet resources
-                effectively.
+                Yoko is designed to{" "}
+                <strong>
+                  simplify and streamline the creation of cheat sheets and
+                  summaries
+                </strong>{" "}
+                for students, improving their study efficiency. The platform
+                will not only{" "}
+                <u>
+                  enhance individual study methods but also foster community
+                  learning
+                </u>{" "}
+                by enabling students to share their summaries and cheat sheets
+                with others. Additionally, Yoko will serve as an{" "}
+                <u>organized repository</u> for students to manage and access
+                their cheat sheet resources effectively.
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex"></div>
-        <div className="mt-24">
-          <h2 className="text-2xl font-semibold">My Impact</h2>
+        <div className="mt-8">
+          <h2 className="text-2xl md:text-3xl font-semibold">My Impact</h2>
           <p className="text-lg">
             This project was my first foray into both development and UI/UX
-            design, and it holds a special place in my heart. I designed the
-            mascot and learned Figma and prototyping while working on this
-            project. My design work included the homepage, the depository, the
-            complete cheatsheet generation process—from uploading lecture notes
-            to downloading the final cheatsheet—and the profile page. In terms
-            of development, I managed the implementation of the homepage,
-            depository, profile pages, login/logout functionality, and
-            cheatsheet viewing, and also integrated a feature allowing users to
-            comment on summaries and cheat sheets.
+            design, and it holds a special place in my heart. I{" "}
+            <strong>designed the mascot</strong> and learned Figma and
+            prototyping while working on this project. My design work included
+            the{" "}
+            <strong>
+              homepage, the depository, the complete cheatsheet generation
+              process
+            </strong>
+            —from uploading lecture notes to downloading the final
+            cheatsheet—and the <strong>profile page</strong>. In terms of
+            development, I managed the implementation of the{" "}
+            <strong>
+              homepage, depository, profile pages, login/logout functionality,
+              and cheatsheet viewing
+            </strong>
+            , and also integrated a feature allowing users to{" "}
+            <strong>comment on other summaries and cheat sheets</strong>.
           </p>
         </div>
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-2">Process</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-2">Process</h2>
 
-          {/* Motivation */}
           <div className="mt-6">
-            <h3 className="text-xl font-semibold mb-2">Motivation</h3>
+            <h3 className="text-xl font-semibold mb-2">Brainstorm</h3>
             <p className="text-lg">
               The project was inspired by the frequent challenge of last-minute
               studying due to poor time management, where we often found
               ourselves creating cheat sheets just before exams. We were
               frustrated by the tedious process of gathering resources and
               formatting them into concise cheat sheets, frequently resorting to
-              templates shared in our module&apos;s Telegram group. This experience
-              highlighted the need for a more efficient and high-quality
-              solution for creating cheat sheets. Recognizing that university
-              students often face the overwhelming task of processing extensive
-              course materials, we envisioned developing a tool to streamline
-              this process and enhance the quality of content.
+              templates shared in our module&apos;s Telegram group. This
+              experience highlighted the need for a more efficient and
+              high-quality solution for creating cheat sheets. Recognizing that{" "}
+              <strong>
+                university students often face the overwhelming task of
+                processing extensive course materials
+              </strong>
+              , we envisioned developing a tool to{" "}
+              <u>streamline this process and enhance the quality of content</u>.
             </p>
           </div>
 
-          {/* Vision */}
-          <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-2">Vision</h3>
-            <p className="text-lg">
-              Our vision is to create &quot;Yoko,&quot; an intelligent assistant designed
-              to help students quickly and accurately generate cheat sheets or
-              summaries from their resources. Yoko aims to simplify the process,
-              ensuring that students can create high-quality content
-              efficiently.
-            </p>
-          </div>
-
-          {/* Proposed Features */}
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-2">Proposed Features</h3>
             <p className="text-lg">
@@ -230,7 +240,6 @@ const Yoko: React.FC = () => {
             </ul>
           </div>
 
-          {/* Wireframes and Prototyping */}
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-2">
               Wireframes and Prototyping
@@ -256,32 +265,33 @@ const Yoko: React.FC = () => {
             </div>
           </div>
 
-          {/* Development Stages */}
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-2">Development Stages</h3>
 
             <div className="mt-4">
               <h4 className="text-lg font-semibold mb-2">Initial Setup</h4>
               <p className="text-lg">
-                We began by setting up a Firebase project and integrating it
-                with our ReactJS frontend. This setup allowed us to implement
-                authentication flows, enabling users to sign up and log in with
-                email and Google accounts. Firebase managed user information
-                securely, facilitating efficient verification during logins. For
-                Google authentication, we utilized OAuth 2.0 with Google&apos;s
-                services.
+                We began by setting up a <strong>Firebase project</strong> and
+                integrating it with our <strong>ReactJS frontend</strong>. This
+                setup allowed us to implement
+                <strong>authentication flows</strong>, enabling users to sign up
+                and log in with email and Google accounts. Firebase managed user
+                information securely, facilitating efficient verification during
+                logins. For Google authentication, we utilized{" "}
+                <strong>OAuth 2.0 with Google&apos;s services</strong>.
               </p>
             </div>
 
             <div className="mt-4">
               <h4 className="text-lg font-semibold mb-2">Development</h4>
               <p className="text-lg">
-                Once users created their accounts, they gained access to a
-                personalized dashboard where they could manage their
-                cheatsheets. Users could upload existing cheat sheets or create
-                new ones using our built-in cheatsheet maker. Firebase storage
-                ensured secure and reliable data handling. <br/> To elevate the user
-                experience even further, we decided to implement a profile page
+                We then developed the <strong>user dashboard</strong> that
+                allows users to efficiently manage their cheatsheets.
+                Additionally, we built a <strong>cheatsheet maker</strong>,
+                enabling users to either upload their existing cheatsheets or
+                create new ones directly within our platform using the
+                integrated tool. <br /> To elevate the user experience even
+                further, we decided to implement a <strong>profile page</strong>{" "}
                 within the dashboard. This enhancement allows users to customise
                 their accounts by adding personal details such as their course
                 of study and year. Just like cheatsheet data, this user
@@ -295,11 +305,12 @@ const Yoko: React.FC = () => {
               </h4>
               <p className="text-lg">
                 In the third stage, we faced a challenge with our Django setup,
-                realizing we had deployed a standard Django server instead of a
-                Django REST API server. We resolved this by correctly setting up
-                the API and using Axios to connect the Django backend with our
-                React frontend. Additionally, the backend logic was written in
-                Python, and we integrated GPT-3.5 for AI functionalities to
+                realizing we had deployed a standard Django server instead of a{" "}
+                <strong>Django REST API server</strong>. We resolved this by
+                correctly setting up the API and using Axios to connect the
+                Django backend with our React frontend. Additionally, the
+                backend logic was written in <strong>Python</strong>, and we
+                integrated <strong>GPT-3.5</strong> for AI functionalities to
                 enhance the cheat sheet generation process.
               </p>
             </div>
@@ -307,11 +318,13 @@ const Yoko: React.FC = () => {
             <div className="mt-4">
               <h4 className="text-lg font-semibold mb-2">Technologies Used</h4>
               <p className="text-lg">
-                Our tech stack included ReactJS, HTML, and CSS for the frontend;
-                Firebase for backend services; Django (with Django REST API) for
-                backend logic; and GPT-3.5 for AI-based functionalities.
-                Deployment was carried out using Vercel for the frontend and
-                Google Cloud Platform for the backend.
+                Our tech stack included <strong>ReactJS, HTML, and CSS</strong>{" "}
+                for the frontend; <strong>Firebase</strong> for backend
+                services; <strong>Django (with Django REST API)</strong> for
+                backend logic; and <strong>GPT-3.5</strong> for AI-based
+                functionalities. Deployment was carried out using{" "}
+                <strong>Vercel</strong> for the frontend and{" "}
+                <strong>Google Cloud Platform</strong> for the backend.
               </p>
             </div>
           </div>
