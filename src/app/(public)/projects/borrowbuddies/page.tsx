@@ -52,7 +52,7 @@ const BorrowBuddies: React.FC = () => {
         </div>
 
         <div className="text-4xl font-bold mb-4 flex items-center">
-          <div className="mr-6 md:mr-4 text-xl md:text-2xl">Borrow Buddies</div>
+          <div className="mr-4 md:mr-4 text-lg md:text-2xl">Borrow Buddies</div>
           <span className="bg-[#68B0AB] text-white px-3 py-1 rounded-full text-xs md:text-sm mr-2">
             #uiux
           </span>
