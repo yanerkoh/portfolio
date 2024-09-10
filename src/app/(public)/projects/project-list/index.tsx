@@ -27,8 +27,8 @@ const ProjectListItem: React.FC<Project> = ({
       <Image
         src={imageUrl}
         alt={title}
-        width={600} // specify the width of the image
-        height={400} // specify the height of the image
+        width={500}
+        height={400}
         className="mb-10 md:mb-0 border border-grey-100 shadow-lg w-[600px] object-cover bg-grey-100 rounded-lg"
       />
       <div className="md:ml-16">
@@ -40,7 +40,7 @@ const ProjectListItem: React.FC<Project> = ({
                 key={index}
                 className={`text-xs font-medium px-2 py-1 rounded-full text-white ${
                   tagColors[tag] || "bg-gray-400"
-                }`} // Default to gray if tag not found
+                }`}
               >
                 {tag}
               </span>
